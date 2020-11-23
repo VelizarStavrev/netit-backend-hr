@@ -1,0 +1,95 @@
+/*     NETIT-BACKEND-HR   */
+/*    by Velizar Stavrev  */
+
+// Variables
+$colors: (
+    primary: #7DC900,
+    secondary: white,
+    text: black,
+    error: red
+);
+
+$font-sizes: (
+    header: 1.5em,
+    title: 1em,
+    paragraph: 0.75em,
+    small: 0.6em
+);
+
+// Functions
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+@function font-size($size) {
+    @return map-get($font-sizes, $size)
+};
+
+// Main code
+body {
+    margin: 0;
+    font-family: Calibri;
+    font-size: 25px;
+}
+
+header {
+    color: color(secondary);
+    background-color: color(primary);
+    text-align: center;
+    font-size: font-size(header);
+    padding: 10px 0;
+}
+
+main {
+    margin: 100px 0;
+}
+
+form {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    label {
+        font-weight: bold;
+        font-size: font-size(title);
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+
+        p {
+            margin: 0;
+            font-size: font-size(small);
+        }
+
+        input {
+            font-size: font-size(paragraph);
+            padding: 5px 10px;
+        }
+    }
+
+    .input:first-child p {
+        margin: 0;
+        font-size: font-size(paragraph);
+        color: color(error);
+    }
+}
+
+.btn-primary {
+    border: none;
+    color: color(secondary);
+    background-color: color(primary);
+    font-size: font-size(paragraph);
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+footer {
+    color: color(secondary);
+    background-color: color(primary);
+    text-align: center;
+    font-size: font-size(small);
+    padding: 10px 0;
+}
