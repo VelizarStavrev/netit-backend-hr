@@ -9,9 +9,9 @@ The SASS folder is left intentionally for viewing purposes.
 **2.**  
 
 ## II. To Do
-**1.** Implement avatars for everyone
-**2.** Implement file upload for employee and readability for HR
-**3.** Fix pagination for messages
+**1.** Implement avatars for everyone  
+**2.** Implement file upload for employee and readability for HR  
+**3.** Fix pagination for messages  
 
 ## III. Live Link
 Click [this](https://thisisanexample.website/) to view the live version on my site.
