@@ -1,0 +1,112 @@
+/* SHARED */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 25px;
+    font-family: Roboto-Regular;
+
+    a {
+        color: color(link);
+    }
+
+    button {
+        font-family: Roboto-Regular;
+    }
+}
+
+.container-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 40px;
+}
+
+form {
+    
+    label {
+        font-size: font-size(paragraph);
+        font-weight: bold;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+
+        input {
+            font-size: font-size(paragraph);
+            padding: 5px 10px;
+        }
+
+        .errorText {
+            display: none;
+            font-size: font-size(paragraph);
+            color: color(error);
+            margin: 0;
+            margin-top: 5px;
+        }
+
+        .smallText {
+            margin: 0;
+            margin-top: 5px;
+            font-size: font-size(small);
+            color: color(text);
+        }
+    }
+}
+
+// BOOTSTRAP CHANGES
+.form-check-input:checked {
+    background-color: color(primary);
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.1rem rgba(25, 135, 84, 0.5);
+}
+
+.page-link {
+    color: color(primary);
+}
+
+.page-link:hover {
+    color: color(primary);
+}
+
+.page-item.active .page-link {
+    background-color: color(primary);
+    border-color: color(primary);
+}
+
+/* Small devices (phones, 320px and up) */
+@media (max-width: 750px) {
+    // Project desined for mobile first
+}
+
+/* Medium devices (tablets, 750px and up) */
+@media (min-width: 751px) {
+    // TO DO...
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    main {
+        width:1000px;
+        padding: 0;
+    }
+
+    form {
+        width: 350px;
+    }
+}

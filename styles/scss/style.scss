@@ -1,95 +1,34 @@
 /*     NETIT-BACKEND-HR   */
 /*    by Velizar Stavrev  */
 
+/* IMPORTS */
 // Variables
-$colors: (
-    primary: #7DC900,
-    secondary: white,
-    text: black,
-    error: red
-);
+@import 'variables';
 
-$font-sizes: (
-    header: 1.5em,
-    title: 1em,
-    paragraph: 0.75em,
-    small: 0.6em
-);
+// Fonts
+@import 'fonts';
 
 // Functions
-@function color($color-name) {
-    @return map-get($colors, $color-name)
-};
+@import 'functions';
+// // // // // // // 
 
-@function font-size($size) {
-    @return map-get($font-sizes, $size)
-};
 
-// Main code
-body {
-    margin: 0;
-    font-family: Calibri;
-    font-size: 25px;
-}
 
-header {
-    color: color(secondary);
-    background-color: color(primary);
-    text-align: center;
-    font-size: font-size(header);
-    padding: 10px 0;
-}
+@import 'shared';
 
-main {
-    margin: 100px 0;
-}
+@import 'header';
 
-form {
-    margin-top: auto;
-    margin-bottom: auto;
+// @import 'login';
 
-    label {
-        font-weight: bold;
-        font-size: font-size(title);
-    }
+@import 'register';
 
-    .input {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 40px;
+// @import '...';
 
-        p {
-            margin: 0;
-            font-size: font-size(small);
-        }
+// @import '...';
 
-        input {
-            font-size: font-size(paragraph);
-            padding: 5px 10px;
-        }
-    }
+@import 'profile';
 
-    .input:first-child p {
-        margin: 0;
-        font-size: font-size(paragraph);
-        color: color(error);
-    }
-}
+@import 'footer';
 
-.btn-primary {
-    border: none;
-    color: color(secondary);
-    background-color: color(primary);
-    font-size: font-size(paragraph);
-    padding: 10px 20px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-footer {
-    color: color(secondary);
-    background-color: color(primary);
-    text-align: center;
-    font-size: font-size(small);
-    padding: 10px 0;
-}
+/* MEDIA QUERIES */
+@import 'queries';
