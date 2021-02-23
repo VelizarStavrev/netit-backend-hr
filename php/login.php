@@ -45,7 +45,7 @@
 
                                 $host  = $_SERVER['HTTP_HOST'];
                                 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-                                $extra = './super/main.php';
+                                $extra = 'super/main.php';
                                 header("Location: http://$host$uri/$extra");
                                 break;
 
@@ -53,7 +53,7 @@
 
                                 $host  = $_SERVER['HTTP_HOST'];
                                 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-                                $extra = './hr/main.php';
+                                $extra = 'hr/main.php';
                                 header("Location: http://$host$uri/$extra");
                                 break;
 
@@ -61,7 +61,7 @@
 
                                 $host  = $_SERVER['HTTP_HOST'];
                                 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-                                $extra = './employer/main.php';
+                                $extra = 'employer/main.php';
                                 header("Location: http://$host$uri/$extra");
                                 break;
 
@@ -69,7 +69,7 @@
 
                                 $host  = $_SERVER['HTTP_HOST'];
                                 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-                                $extra = './employee/main.php';
+                                $extra = 'employee/main.php';
                                 header("Location: http://$host$uri/$extra");
                                 break;
                         }

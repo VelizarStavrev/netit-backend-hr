@@ -2,21 +2,10 @@
 
     include "../php/db.php";
 
+    include "../auth/notLogged.php";
+
     include "../php/register.php";
     
-?>
-
-<?php 
-
-    if ($_SESSION['logged_in']) {
-
-        $host  = $_SERVER['HTTP_HOST'];
-        $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-        $extra = './employee/main.php';
-        header("Location: http://$host$uri/$extra");
-        exit;
-        
-    } else {
 ?>
 
 <!DOCTYPE html>
@@ -365,9 +354,3 @@
 </body>
 
 </html>
-
-<?php
-
-    }
-
-?>
