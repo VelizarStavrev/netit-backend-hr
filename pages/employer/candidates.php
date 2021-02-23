@@ -2,35 +2,24 @@
 
     include "../../php/db.php";
 
+    include "../../auth/employer.php";
+
 ?>
 
 <?php 
 
-    if (!$_SESSION['logged_in'] || $_SESSION['role_id'] != 3) {
+    // Check if creator of the job to view candidates
+    $currentjobid = substr($_SERVER['QUERY_STRING'], 3);
+    $query = "SELECT jobs.title, jobs.creator FROM jobs WHERE jobs.id = $currentjobid";
+    $result = mysqli_query($DB, $query);
+    $job = mysqli_fetch_assoc($result);
 
-        if (!$_SESSION['role_id']) {
-            $_SESSION['logged_in'] = null;
-        }
-
+    if ($job['creator'] != $_SESSION['user_id']) {
         $host  = $_SERVER['HTTP_HOST'];
         $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-        $extra = '../login.php';
+        $extra = './main.php';
         header("Location: http://$host$uri/$extra");
-        exit;
-
-    } else {
-
-        $currentjobid = substr($_SERVER['QUERY_STRING'], 3);
-        $query = "SELECT jobs.title, jobs.creator FROM jobs WHERE jobs.id = $currentjobid";
-        $result = mysqli_query($DB, $query);
-        $job = mysqli_fetch_assoc($result);
-
-        if ($job['creator'] != $_SESSION['user_id']) {
-            $host  = $_SERVER['HTTP_HOST'];
-            $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-            $extra = './main.php';
-            header("Location: http://$host$uri/$extra");
-        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -163,9 +152,3 @@
 </body>
 
 </html>
-
-<?php 
-
-    }
-
-?>

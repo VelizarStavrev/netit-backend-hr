@@ -40,7 +40,7 @@ function filterFunc(paginationClicked) {
         .then(jobs => {
 
             // Testing response
-            // console.log('Success:', jobs);
+            console.log('Success:', jobs);
 
             // Get number of results
             let jobCount = jobs.pop();

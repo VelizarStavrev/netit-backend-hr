@@ -1,3 +1,14 @@
+<?php
+
+    include "../php/db.php";
+
+    include "../auth/notLogged.php";
+
+    // TO DO 
+    // add script to send email with reset
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

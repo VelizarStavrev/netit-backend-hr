@@ -2,6 +2,8 @@
 
     include "../../php/db.php";
 
+    include "../../auth/hr.php";
+
     include "../../php/employee/accountInfo.php";
     
 ?>

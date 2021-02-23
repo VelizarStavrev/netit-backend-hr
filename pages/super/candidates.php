@@ -2,28 +2,17 @@
 
     include "../../php/db.php";
 
+    include "../../auth/super.php";
+
 ?>
 
 <?php 
 
-    if (!$_SESSION['logged_in'] || $_SESSION['role_id'] != 1) {
-
-        if (!$_SESSION['role_id']) {
-            $_SESSION['logged_in'] = null;
-        }
-
-        $host  = $_SERVER['HTTP_HOST'];
-        $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-        $extra = '../login.php';
-        header("Location: http://$host$uri/$extra");
-        exit;
-
-    } else {
-
-        $currentjobid = substr($_SERVER['QUERY_STRING'], 3);
-        $query = "SELECT jobs.title, jobs.creator FROM jobs WHERE jobs.id = $currentjobid";
-        $result = mysqli_query($DB, $query);
-        $job = mysqli_fetch_assoc($result);
+    // Get job title
+    $currentjobid = substr($_SERVER['QUERY_STRING'], 3);
+    $query = "SELECT jobs.title, jobs.creator FROM jobs WHERE jobs.id = $currentjobid";
+    $result = mysqli_query($DB, $query);
+    $job = mysqli_fetch_assoc($result);
 ?>
 
 <!DOCTYPE html>
@@ -156,9 +145,3 @@
 </body>
 
 </html>
-
-<?php 
-
-    }
-
-?>
