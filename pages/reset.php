@@ -24,10 +24,8 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center">RESET</header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
             <form action="">
@@ -53,10 +51,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!--Scripts -->
         <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../script.js"></script>
     </div>

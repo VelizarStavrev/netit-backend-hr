@@ -21,7 +21,6 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center position-relative">
 
             <div class="d-inline-flex align-items-center p-2 bd-highlight position-absolute top-0 start-0">
@@ -41,23 +40,22 @@
             
         </header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
-            <!-- PAGE CONTAINER -->
+            <!-- Page Container -->
             <div class="d-flex flex-column gap-3 w-100">
 
-                <!-- BUTTONS -->
+                <!-- Buttons -->
                 <div class="text-center position-relative">
 
                     <a href="./main.php" class="p-2 position-absolute end-0 btn btn-outline-success rounded-circle me-4">
                         <img src="../../static/icons/back.svg" style="width: 25px;" alt="back">
                     </a>
 
-                    <!-- FILTER BUTTONS -->
+                    <!-- Filter Buttons -->
                     <div class="d-flex justify-content-center">
     
-                        <!-- FILTERS BUTTON -->
+                        <!-- Filter button -->
                         <div class="dropdown mx-2">
                             <button class="btn btn-outline-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 FILTERS
@@ -96,7 +94,7 @@
                             </ul>
                         </div>
     
-                        <!-- SORT BUTTON -->
+                        <!-- Sort Button -->
                         <div class="dropdown mx-2">
                             <button class="btn btn-outline-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 SORT
@@ -145,12 +143,11 @@
                     
                 </div>
 
-                <!-- MAIN CONTENT -->
+                <!-- Main Content -->
                 <div class="container-xl d-flex list-group-flush flex-column" id="mainContent">
 
                     <?php
 
-                        // $userid = $_SESSION['user_id'];
                         $query = "SELECT jobs.*, employer_info.country, employer_info.city FROM jobs, employer_info WHERE jobs.creator = employer_info.user_id ORDER BY jobs.title ASC LIMIT 5";
                         $result = mysqli_query($DB, $query);
 
@@ -176,7 +173,7 @@
 
                 </div>
 
-                <!-- PAGE NAVIGATION -->
+                <!-- Page Navigation -->
                 <nav aria-label="Page navigation" class="text-center">
                     <ul class="pagination pagination-sm justify-content-center d-inline-flex" id="pagination">
 
@@ -215,10 +212,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../../scripts/super/offers.js"></script>
     </div>

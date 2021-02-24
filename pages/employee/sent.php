@@ -21,7 +21,6 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center position-relative">
 
             <div class="d-inline-flex align-items-center p-2 bd-highlight position-absolute top-0 start-0">
@@ -41,10 +40,9 @@
             
         </header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
-            <!-- PAGE CONTAINER -->
+            <!-- Page container -->
             <div class="d-flex flex-column gap-3 w-100">
 
                 <div class="profileSettings list-group-flush" id="mainContent">
@@ -90,7 +88,7 @@
 
                 </div>
 
-                <!-- PAGE NAVIGATION -->
+                <!-- Page Navigation -->
                 <nav aria-label="Page navigation" class="text-center">
                     <ul class="pagination pagination-sm justify-content-center d-inline-flex" id="pagination">
 
@@ -129,10 +127,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="../../scripts/super/candidates.js"></script> -->
     </div>
