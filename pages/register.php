@@ -23,16 +23,14 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center">REGISTER</header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
             <!-- Employee -->
-            <!-- First part of the form -->
             <form id="formEmployee" method="POST" action="./register.php">
 
+                <!-- First part of the form -->
                 <div id="formEmployeeFirst" class="formFirst">
                     <div class="radioDiv">
                         <div>
@@ -194,6 +192,7 @@
             <!-- Employer -->
             <form id="formEmployer" method="POST" action="./register.php">
 
+                <!-- First part of the form -->
                 <div id="formEmployerFirst" class="formFirst">
                     <div class="radioDiv">
                         <div>
@@ -244,6 +243,7 @@
                     </div>
                 </div>
 
+                <!-- Second part of the form -->
                 <div id="formEmployerSecond" class="formSecond">
                     <div class="radioDiv">
                         <div>
@@ -296,6 +296,7 @@
                     </div>
                 </div>
 
+                <!-- Third part of the form -->
                 <div id="formEmployerThird" class="formThird">
                     <div class="radioDiv">
                         <div>
@@ -344,10 +345,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../scripts/register.js"></script>
     </div>

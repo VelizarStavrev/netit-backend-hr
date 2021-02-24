@@ -42,10 +42,8 @@
 
         </header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
-            <!-- First part of the form -->
             <form id="formEmployee" method="POST">
 
             <?php
@@ -162,10 +160,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../../scripts/employer/accountInfo.js"></script>
     </div>

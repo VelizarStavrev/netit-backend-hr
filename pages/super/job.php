@@ -50,7 +50,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>netit-backend-hr -JOB LISTINGS</title>
+    <title>netit-backend-hr - JOB LISTINGS</title>
     <link rel="icon" href="../../static/icons/netit.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../styles/css/style.min.css">
@@ -59,7 +59,6 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center position-relative">
 
             <div class="d-inline-flex align-items-center p-2 bd-highlight position-absolute top-0 start-0">
@@ -79,7 +78,6 @@
             
         </header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
             <div class="profileSettings">
@@ -144,7 +142,6 @@
                         if ($job['job_status'] == 'open') {
 
                     ?>
-
                         <button 
                             class="btn btn-outline-success logout"
                             type="submit"
@@ -157,7 +154,6 @@
                         } else {
 
                     ?>
-
                         <button 
                             class="btn btn-outline-success logout"
                             type="submit"
@@ -176,10 +172,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../../script.js"></script>
     </div>

@@ -21,7 +21,6 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center position-relative">
 
             <div class="d-inline-flex align-items-center p-2 bd-highlight position-absolute top-0 start-0">
@@ -41,22 +40,21 @@
             
         </header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
-            <!-- PAGE CONTAINER -->
+            <!-- Page Container -->
             <div class="d-flex flex-column gap-3 w-100">
 
-                <!-- BUTTONS -->
+                <!-- Buttons -->
                 <div class="text-center">
 
-                    <!-- CREATE NEW BUTTON -->
+                    <!-- Create New Button -->
                     <a href="./create.php" class="btn btn-success mx-2 mb-3">CREATE NEW</a>
                     
-                    <!-- FILTER BUTTONS -->
+                    <!-- Filter Buttons -->
                     <div class="d-flex justify-content-center">
     
-                        <!-- FILTERS BUTTON -->
+                        <!-- Filter Button -->
                         <div class="dropdown mx-2">
                             <button class="btn btn-outline-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 FILTERS
@@ -83,7 +81,7 @@
                             </ul>
                         </div>
     
-                        <!-- SORT BUTTON -->
+                        <!-- Sort Button -->
                         <div class="dropdown mx-2">
                             <button class="btn btn-outline-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 SORT
@@ -132,7 +130,7 @@
                     
                 </div>
 
-                <!-- MAIN CONTENT -->
+                <!-- Main Content -->
                 <div class="container-xl d-flex list-group-flush flex-column" id="mainContent">
 
                     <?php
@@ -169,7 +167,7 @@
 
                 </div>
 
-                <!-- PAGE NAVIGATION -->
+                <!-- Page Navigation -->
                 <nav aria-label="Page navigation" class="text-center">
                     <ul class="pagination pagination-sm justify-content-center d-inline-flex" id="pagination">
 
@@ -208,10 +206,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../../scripts/employer/main.js"></script>
     </div>

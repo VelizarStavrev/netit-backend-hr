@@ -21,7 +21,6 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center position-relative">
 
             <div class="d-inline-flex align-items-center p-2 bd-highlight position-absolute top-0 start-0">
@@ -41,7 +40,6 @@
             
         </header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
             <div class="profileSettings">
@@ -50,7 +48,6 @@
 
                 $userid = substr($_SERVER['QUERY_STRING'], 3);
 
-                // user
                 $query = "SELECT users.* FROM users WHERE users.id = $userid";
                 $result = mysqli_query($DB, $query);
                 $user = mysqli_fetch_assoc($result);
@@ -123,10 +120,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../../scripts/super/user.js"></script>
     </div>

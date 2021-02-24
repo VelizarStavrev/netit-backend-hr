@@ -23,7 +23,6 @@
 <body>
     <div class="container-page">
 
-        <!-- DOM manipulated header -->
         <header class="navbar bg-success text-light justify-content-center position-relative">
         
             <div class="d-inline-flex align-items-center p-2 bd-highlight position-absolute top-0 start-0">
@@ -42,13 +41,12 @@
             </div>
         </header>
 
-        <!-- Div holding the changeable component -->
         <main id="main">
 
-            <!-- PAGE CONTAINER -->
+            <!-- Page Container -->
             <div class="d-flex flex-column gap-3">
 
-                <!-- Input form -->
+                <!-- Input Form -->
                 <form method="POST">
 
                     <?php
@@ -113,7 +111,7 @@
                         <p class="errorText">JOB DESCRIPTION IS BLANK!</p>
                     </div>
 
-                    <!-- BUTTONS -->
+                    <!-- Buttons -->
                     <div class="input gap-3">
                         <button type="submit" class="btn btn-success mx-2">EDIT</button>
                         <a href="./job.php?id=<?php echo $job['id'] ?>" class="btn btn-outline-success mx-2">CANCEL</a>
@@ -125,10 +123,9 @@
 
         </main>
 
-        <!-- Static Footer -->
         <footer class="bg-success">© 2021 VELIZAR STAVREV - NET IT ACADEMY</footer>
 
-        <!-- Main script -->
+        <!-- Scripts -->
         <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../../script.js"></script>
     </div>
