@@ -22,10 +22,11 @@ function filterFunc(paginationClicked) {
     jobid = Number(jobid.substring(4));
     const data = [jobid, currentPageBtnData];
 
+    let protocol = window.location.protocol;
     let host = window.location.hostname;
 
     // Request data
-    fetch(`http://${host}/netit-backend-hr/php/employer/candidates.php`, { // intentionally left to search in employer
+    fetch(`${protocol}//${host}/netit-backend-hr/php/employer/candidates.php`, { // intentionally left to search in employer
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

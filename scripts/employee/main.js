@@ -25,10 +25,12 @@ function filterFunc(paginationClicked) {
 
     // Data to send to server
     const data = [checkboxData, radiobtnData, currentPageBtnData];
+
+    let protocol = window.location.protocol;
     let host = window.location.hostname;
 
     // Request data
-    fetch(`http://${host}/netit-backend-hr/php/employee/filters.php`, {
+    fetch(`${protocol}//${host}/netit-backend-hr/php/employee/filters.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

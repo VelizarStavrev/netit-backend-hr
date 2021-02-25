@@ -20,10 +20,11 @@ function updateStatus(status) {
 
     let data = [status, jobid];
 
+    let protocol = window.location.protocol;
     let host = window.location.hostname;
 
     // Send data
-    fetch(`http://${host}/netit-backend-hr/php/hr/updateStatus.php`, {
+    fetch(`${protocol}//${host}/netit-backend-hr/php/hr/updateStatus.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

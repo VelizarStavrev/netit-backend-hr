@@ -2,7 +2,7 @@
 
     include "paths.php";
 
-    if ($_SESSION['logged_in']) {
+    if (isset($_SESSION['logged_in'])) {
 
         if ($_SESSION['role_id'] == 1) {
 
