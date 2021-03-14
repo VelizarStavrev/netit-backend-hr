@@ -26,7 +26,8 @@ function filterFunc(paginationClicked) {
     let host = window.location.hostname;
 
     // Request data
-    fetch(`${protocol}//${host}/netit-backend-hr/php/employer/candidates.php`, { // intentionally left to search in employer
+    // fetch(`${protocol}//${host}/netit-backend-hr/php/employer/candidates.php`, { // intentionally left to search in employer
+    fetch(`${protocol}//${host}/php/employer/candidates.php`, { // intentionally left to search in employer
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

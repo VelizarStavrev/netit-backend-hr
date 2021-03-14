@@ -82,6 +82,9 @@
         $pageNumber = trim($pageNumber, '\"]');
 
         $offsetNumber = ($pageNumber - 1) * $limitNumber;
+        if ($offsetNumber < 0) {
+            $offsetNumber = 0;
+        }
         $offset = ' OFFSET '.$offsetNumber;
 
         // the query has a main string, a filter, a sort and a limit with offset
@@ -104,7 +107,11 @@
             array_push($jobArray, mysqli_num_rows($result));
 
             // Send response to front end
-            $dbresponse = json_encode($jobArray);
+            // $dbresponse = json_encode($jobArray);
+            // echo $dbresponse;
+
+            // TEMP!
+            $dbresponse = json_encode($query);
             echo $dbresponse;
 
         } else {

@@ -22,6 +22,6 @@
         }
 
         // $extra = 'pages/login.php';
-        header("Location: $protocol://$host/$uri/$extra");
+        header("Location: $protocol://$host/$extra");
         exit;
     }
