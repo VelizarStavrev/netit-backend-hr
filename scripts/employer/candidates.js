@@ -26,7 +26,8 @@ function filterFunc(paginationClicked) {
     let host = window.location.hostname;
 
     // Request data
-    fetch(`${protocol}//${host}/netit-backend-hr/php/employer/candidates.php`, {
+    // fetch(`${protocol}//${host}/netit-backend-hr/php/employer/candidates.php`, {
+    fetch(`${protocol}//${host}/php/employer/candidates.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

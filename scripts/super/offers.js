@@ -30,7 +30,8 @@ function filterFunc(paginationClicked) {
     let host = window.location.hostname;
 
     // Request data
-    fetch(`${protocol}//${host}/netit-backend-hr/php/super/offersFilters.php`, {
+    // fetch(`${protocol}//${host}/netit-backend-hr/php/super/offersFilters.php`, {
+    fetch(`${protocol}//${host}/php/super/offersFilters.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

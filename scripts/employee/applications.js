@@ -26,7 +26,8 @@ function filterFunc() {
     let host = window.location.hostname;
 
     // Request data
-    fetch(`${protocol}//${host}/netit-backend-hr/php/employee/applications.php`, {
+    // fetch(`${protocol}//${host}/netit-backend-hr/php/employee/applications.php`, {
+    fetch(`${protocol}//${host}/php/employee/applications.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

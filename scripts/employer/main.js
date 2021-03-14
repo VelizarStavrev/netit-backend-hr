@@ -30,7 +30,8 @@ function filterFunc(paginationClicked) {
     let host = window.location.hostname;
 
     // Request data
-    fetch(`${protocol}//${host}/netit-backend-hr/php/employer/filters.php`, {
+    // fetch(`${protocol}//${host}/netit-backend-hr/php/employer/filters.php`, {
+    fetch(`${protocol}//${host}/php/employer/filters.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -41,7 +42,7 @@ function filterFunc(paginationClicked) {
         .then(jobs => {
 
             // Testing response
-            // console.log('Success:', jobs);
+            console.log('Success:', jobs);
 
             // Get number of results
             let jobCount = jobs.pop();
@@ -154,7 +155,7 @@ function filterFunc(paginationClicked) {
             }
         })
         .catch((error) => {
-            console.error('Error:', error);
+            console.log('Error:', error);
         });
 }
 

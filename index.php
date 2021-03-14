@@ -38,7 +38,7 @@
         }
     }
 
-    header("Location: $protocol://$host/$uri/$extra");
+    header("Location: $protocol://$host/$extra");
 
     // Do not execute any other code
     exit;

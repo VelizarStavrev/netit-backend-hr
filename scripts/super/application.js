@@ -24,7 +24,8 @@ function updateStatus(status) {
     let host = window.location.hostname;
 
     // Send data
-    fetch(`${protocol}//${host}/netit-backend-hr/php/super/updateStatus.php`, {
+    // fetch(`${protocol}//${host}/netit-backend-hr/php/super/updateStatus.php`, {
+    fetch(`${protocol}//${host}/php/super/updateStatus.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

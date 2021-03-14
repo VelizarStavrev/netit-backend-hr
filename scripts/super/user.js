@@ -24,7 +24,8 @@ function updateStatus(role) {
     let host = window.location.hostname;
 
     // Send data
-    fetch(`${protocol}//${host}/netit-backend-hr/php/super/updateRole.php`, {
+    // fetch(`${protocol}//${host}/netit-backend-hr/php/super/updateRole.php`, {
+    fetch(`${protocol}//${host}/php/super/updateRole.php`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
